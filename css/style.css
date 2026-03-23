@@ -271,6 +271,36 @@ h1, h2, h3, h4, h5 {
   line-height: 1.7;
 }
 
+/* ── ABOUT SECTION ── */
+.about-section {
+  padding: 88px 0;
+  background: var(--color-bg);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+.about-content p {
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* ── KEY FOCUS ── */
+.key-focus {
+  padding: 88px 0;
+  background: var(--color-bg-alt);
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--color-primary);
@@ -342,4 +372,37 @@ footer {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.45);
   text-align: center;
+}
+
+/* About page - 4 cards layout */
+.key-focus .cards-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* About section spacing */
+.about-section {
+  padding: 72px 0;
+  background: var(--color-bg);
+}
+
+.about-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.about-section p {
+  color: var(--color-text-light);
+  max-width: 720px;
+  line-height: 1.8;
+}
+
+.key-focus {
+  padding: 72px 0;
+  background: var(--color-bg-alt);
+}
+
+.about-section .about-content {
+  text-align: left;
 }
