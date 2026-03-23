@@ -549,3 +549,47 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+.contact-icon i {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+/* ── Page header (shorter than full hero) ── */
+.page-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 56px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(232, 135, 58, 0.12);
+}
+
+.page-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  margin: 12px 0 10px;
+  color: #fff;
+}
+
+.page-header p {
+  color: rgba(255,255,255,0.75);
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+/* ── Font Awesome contact icons ── */
+.contact-icon i {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
